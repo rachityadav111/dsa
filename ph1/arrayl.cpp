@@ -23,10 +23,14 @@ int sl(int arr[],int n){
             l=arr[i];
         }
     }
+    bool f=true;
     for(int i=0;i<n;i++){
-        if(l>arr[i] && ){
-          s=arr[i];
+        if(arr[i]<l){
+            if(f || s<arr[i]){
+                s=arr[i];
+                f=false;
             }
+        }
     }
     return s;
 }
