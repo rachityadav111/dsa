@@ -20,9 +20,9 @@ int pos(int arr[],int &n,int p,int v){
     arr[p]=v;
     n++;
     return arr[n];
-}
+} 
 void trav(int arr[],int &n){
-    for (int i=0;i<10;i++){
+    for (int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
 }
